@@ -18,7 +18,7 @@
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        // perform an subtraction
         alert(parseInt(document.getElementById("op-one").value) - parseInt(document.getElementById("op-two").value));
     });
 
