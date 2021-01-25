@@ -26,6 +26,10 @@
        buttons.push(button);
        button.addEventListener("click", function(){
            let content = random(parseInt(displays[i].dataset.min), parseInt(displays[i].dataset.max));
+           if(content < 10)
+           {
+               content = "0" + content;
+           }
            displays[i].value = content;
            UpdateDisplay();
        });
